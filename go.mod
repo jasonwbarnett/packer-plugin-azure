@@ -13,16 +13,16 @@ require (
 	github.com/approvals/go-approval-tests v0.0.0-20210131072903-38d0b0ec12b1
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible
 	github.com/dnaeon/go-vcr v1.1.0 // indirect
-	github.com/google/go-cmp v0.5.5
+	github.com/google/go-cmp v0.5.6
 	github.com/hashicorp/go-azure-helpers v0.16.5
 	github.com/hashicorp/hcl/v2 v2.10.1
-	github.com/hashicorp/packer-plugin-sdk v0.2.4-0.20210824193240-6b55f55dd41b
-	github.com/masterzen/winrm v0.0.0-20210504160029-28ed956f5227
+	github.com/hashicorp/packer-plugin-sdk v0.2.5-0.20210901154340-d973e37f8315
+	github.com/masterzen/winrm v0.0.0-20210623064412-3b76017826b0
 	github.com/mitchellh/mapstructure v1.4.1
 	github.com/mitchellh/reflectwalk v1.0.2
 	github.com/stretchr/testify v1.7.0
-	github.com/zclconf/go-cty v1.9.0
-	golang.org/x/crypto v0.0.0-20210220033148-5ea612d1eb83
+	github.com/zclconf/go-cty v1.9.1
+	golang.org/x/crypto v0.0.0-20210817164053-32db794688a5
 )
 
 // Incorrect plugin registration for Azure component; see hashicorp/packer-plugin-azure/pull/73
