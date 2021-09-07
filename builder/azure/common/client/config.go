@@ -332,11 +332,15 @@ func (c Config) GetServicePrincipalToken(
 // The SubscriptionID is also retrieved in case MSI auth is requested.
 func (c *Config) FillParameters() error {
 	if c.authType == "" {
+		log.Print(":: Choosing auth type")
 		if c.useDeviceLogin() {
+			log.Print("Using Device Login auth")
 			c.authType = authTypeDeviceLogin
 		} else if c.UseCLI() {
+			log.Print("Using CLI auth")
 			c.authType = authTypeAzureCLI
 		} else if c.UseMSI() {
+			log.Print("Using MSI auth")
 			c.authType = authTypeMSI
 		} else if c.ClientSecret != "" {
 			c.authType = authTypeClientSecret
